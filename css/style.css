@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 body {
@@ -79,10 +79,14 @@ form input, form select {
     border: none;
     border-bottom: 2px solid #000;
 }
+form select {
+    cursor: pointer;
+}
 /* Icons positioned using padding from the inputs */
 .icon {
     position: absolute;
-    bottom: 22px
+    bottom: 22px;
+    left: 2px;
 }
 .btn {
     background: #000;
