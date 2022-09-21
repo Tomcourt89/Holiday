@@ -7,12 +7,10 @@ footer {
     grid-row: 3;
 }
 form {
+    /* Grid used to create customisable layout where additonal options can be added */
     display: grid;
     grid-template-columns: repeat(3, 1fr) auto;
-    grid-template-rows: repeat(2, 1fr);
-}
-label {
-    grid-row: 1;
+    grid-column-gap: 50px;
 }
 .col1 {
     grid-column: 1;

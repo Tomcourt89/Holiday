@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday Finder</title>
     <meta name="description" content="Example page for a holiday booking website.">
+    <script src="https://kit.fontawesome.com/34e24f26aa.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
                 <li><a href="#">Find Your Holiday</a></li>
                 <li><a href="#">Popular Locations</a></li>
                 <li><a href="#">Log In</a></li>
-                <li><a href="#" class="pillBtn">Create An Account</a></li>
+                <li><a href="#" class="pillBtn">Create An Account <i class="fa-solid fa-arrow-right"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -32,28 +33,42 @@
     <main>
         <section>
             <h2>Ready to find your next dream holiday?</h2>
-            <a href="#" class="pillBtn">Get Started</a>
+            <a href="#" class="pillBtn">Get Started <i class="fa-solid fa-arrow-right"></i></a>
         </section>
     </main>
 
     <footer>
         <form action="#">
-            <label for="location" class="col1">Location</label>
-            <input type="text" class="col1">
-            <label for="nights" class="col2">Nights</label>
-            <select name="nights" id="nights" class="col2">
-                <option value="seven">7</option>
-                <option value="ten">10</option>
-                <option value="fourteen">14</option>
-            </select>
-            <label for="people" class="col3">People</label>
-            <select name="people" id="people" class="col3">
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-                <option value="five">5</option>
-            </select>
-            <input type="submit" class="col4">
+            <div class="col1">
+                <label for="location" >Location</label>
+                <i class="icon fa-solid fa-location-arrow"></i>
+                <input type="text" placeholder="San Marino">
+            </div>
+            
+            <div class="col2">
+                <label for="nights" >Nights</label>
+                <i class=" icon fa-solid fa-bed"></i>
+                <select name="nights" id="nights">
+                    <option value="seven">7</option>
+                    <option value="ten">10</option>
+                    <option value="fourteen">14</option>
+                </select> 
+            </div>
+            
+            <div class="col3">
+                <label for="people" >People</label>
+                <i class="icon fa-solid fa-user"></i>
+                <select name="people" id="people">
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+            </div>
+            
+            <div class="col4">
+                <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </form>
     </footer>
 </body>

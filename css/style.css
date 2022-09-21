@@ -3,7 +3,8 @@
     /* Reset */
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
 body {
@@ -17,10 +18,10 @@ body {
 }
 
 header {
-    padding: 0px 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
-    background: green;
+    backdrop-filter: blur(12px);
 }
 nav ul{
     display: flex;
@@ -28,6 +29,7 @@ nav ul{
 }
 ul li {
     list-style-type: none;
+    margin-left: 150px;
 }
 a {
     text-decoration: none;
@@ -44,7 +46,7 @@ section {
     width: 1100px;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-shadow: 2px 2px #000;
     font-weight: 800;
     line-height: 1;
@@ -53,14 +55,41 @@ h2 {
 .pillBtn {
     background: #000;
     text-align: center;
-    padding: 1rem;
-    margin-top: 50px;
+    padding: 15px 50px;
     border-radius: 50px;
+}
+.pillBtn i {
+    margin-left: 20px;
 }
 
 footer {
-    height: 150px;
-    padding: 0px 100px;
+    padding: 30px 100px;
     background: #fff;
     color: #000;
+    font-weight: 600;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+form input, form select {
+    padding: 15px 30px;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+/* Icons positioned using padding from the inputs */
+.icon {
+    position: absolute;
+    bottom: 22px
+}
+.btn {
+    background: #000;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.btn i {
+    padding: 20px;
 }
