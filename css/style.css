@@ -1,5 +1,48 @@
 * {
     font-family: 'Be Vietnam Pro', sans-serif;
+    /* Reset */
     margin: 0;
     padding: 0;
+}
+
+body {
+    /* Background image to fill body, webp used for optimal file size */
+    background-image: url("/resources/background.webp");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    background: green;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px; 
+    justify-content: center;
+}
+
+footer {
+    height: 150px;
+    padding: 0px 100px;
+    background: #fff;
+    color: #000;
 }

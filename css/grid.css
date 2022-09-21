@@ -1,0 +1,9 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+/* Creating a sticky footer */
+footer {
+    grid-row: 3;
+}
+    
