@@ -30,28 +30,30 @@
 
     <!-- Background implemented with css due to it being ambient. Should the background be a relevant image (such as a specific location the user is viewing) image should be implemented with html + alt text -->
     <main>
-        <h2>Ready to find your next dream holiday?</h2>
-        <a href="#" class="pillBtn">Get Started</a>
+        <section>
+            <h2>Ready to find your next dream holiday?</h2>
+            <a href="#" class="pillBtn">Get Started</a>
+        </section>
     </main>
 
     <footer>
         <form action="#">
-            <label for="location">Location</label>
-            <input type="text">
-            <label for="nights">Nights</label>
-            <select name="nights" id="nights">
+            <label for="location" class="col1">Location</label>
+            <input type="text" class="col1">
+            <label for="nights" class="col2">Nights</label>
+            <select name="nights" id="nights" class="col2">
                 <option value="seven">7</option>
                 <option value="ten">10</option>
                 <option value="fourteen">14</option>
             </select>
-            <label for="people">People</label>
-            <select name="people" id="people">
+            <label for="people" class="col3">People</label>
+            <select name="people" id="people" class="col3">
                 <option value="two">2</option>
                 <option value="three">3</option>
                 <option value="four">4</option>
                 <option value="five">5</option>
             </select>
-            <input type="submit">
+            <input type="submit" class="col4">
         </form>
     </footer>
 </body>
