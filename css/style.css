@@ -197,11 +197,15 @@ form div:hover .icon {
 }
 
 /* Mobile view */
-@media (max-width: 750px){
+@media (max-width: 640px){
     section {
         width: 100%;
     }
+    h2 {
+        font-size: 3rem;
+    }
     footer {
+        position: sticky;
         display: flex;
         flex-direction: column;
         justify-content: center;
