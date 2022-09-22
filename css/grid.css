@@ -25,3 +25,11 @@ form {
     grid-column: 4;
 }
     
+
+@media (max-width: 1450px) {
+    /* Removes the top row from the grid as the menu will now be collapsable */
+    body {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+}
