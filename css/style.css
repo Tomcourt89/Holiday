@@ -34,6 +34,10 @@ ul li {
 a {
     text-decoration: none;
     color: #fff;
+    white-space: nowrap;
+}
+a:hover {
+    color: #c9c9c9;
 }
 
 main {
@@ -60,6 +64,10 @@ h2 {
 }
 .pillBtn i {
     margin-left: 20px;
+    transition: 0.5s;
+}
+.pillBtn:hover i {
+    transform: translateX(20px);
 }
 
 footer {
@@ -78,6 +86,7 @@ form input, form select {
     padding: 15px 30px;
     border: none;
     border-bottom: 2px solid #000;
+    
 }
 form select {
     cursor: pointer;
@@ -87,13 +96,28 @@ form select {
     position: absolute;
     bottom: 22px;
     left: 2px;
+    transition: 0.5s;
+}
+/* The shape of this icon makes it require custom placement to look correct */
+.col1 .icon {
+    bottom: 27px;
+}
+form div:hover .icon {
+    transform: translateY(-5px);
 }
 .btn {
     background: #000;
     color: white;
     border-radius: 100px;
     cursor: pointer;
+    transition: 0.5s;
 }
 .btn i {
     padding: 20px;
+}
+.btn:hover i {
+    color: #c9c9c9;
+}
+.btn:hover {
+    transform: scale(1.2);
 }
