@@ -36,7 +36,6 @@
 body {
     /* Background image to fill body, webp used for optimal file size */
     background-image: url("../resources/background.webp");
-    /* width: 100%; */
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,7 +155,7 @@ form div:hover .icon {
     display: none;
 }
 /* Tablet view */
-@media (max-width: 1450px){
+@media only screen and (max-width: 1450px){
     header {
         visibility: hidden;
         opacity: 0;
@@ -164,20 +163,19 @@ form div:hover .icon {
         top: 0;
         left: 0;
         width: 0px;
-        max-height: 100%;
+        height: 100vh;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         flex-direction: column;
         overflow: hidden;
         z-index: 9;
     }
     nav ul {
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
     nav ul li {
-        margin: 150px 30px 10px 30px;
+        margin: 30px auto;
     }
     nav .pillBtn {
         padding: 15px 25px
@@ -199,7 +197,7 @@ form div:hover .icon {
 }
 
 /* Mobile view */
-@media (max-width: 640px){
+@media only screen and (max-width: 640px){
     section {
         width: 100%;
     }
